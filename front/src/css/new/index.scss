@@ -1,0 +1,148 @@
+@import "../common/init";
+@import "../common/constants";
+@import "../common/header";
+@import "../common/body";
+@import "../common/footer";
+@import "../new/news_list";
+
+// 左边轮播图区域；
+.main {
+    .wrapper {
+        .main-content-wrapper {
+            // 展示轮播图的区域；
+            .banner-group {
+                height: $bannerHeight;
+                width: $bannerWidth;
+                position: relative; //相对定位；
+                overflow: hidden;
+                z-index: 0;
+                //装载所有轮播图的盒子；
+                .banner-ul {
+                    overflow: hidden;
+                    position: absolute; //绝对定位，以上一层的相对定位为依据；
+                    width: $bannerWidth*4;
+                    left: 0;
+                    //单个图片盒子；
+                    li {
+                        float: left;
+                        width: $bannerWidth;
+                        height: $bannerHeight;
+
+                        img {
+                            width: $bannerWidth;
+                            height: $bannerHeight;
+                        }
+                    }
+                }
+
+                .arrow {
+                    font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+                    font-size: 70px;
+                    top: 50%;
+                    margin-top: -45px;
+                    color: #fff;
+                    position: absolute;
+                    cursor: pointer; //设置光标为指针；
+                    display: none; //设置默认隐藏；
+                }
+
+                .left-arrow {
+                    left: 20px;
+                }
+
+                .right-arrow {
+                    right: 20px;
+                }
+
+                // 小圆点
+                .page-control-group {
+                    position: absolute;
+                    left: 0;
+                    right: 0;
+                    bottom: 20px;
+
+                    .page-control {
+                        margin: 0 auto;
+                        overflow: hidden;
+
+                        li {
+                            float: left;
+                            width: 10px;
+                            height: 10px;
+                            border: 1px solid #fff;
+                            border-radius: 50%;
+                            margin: 0 8px;
+                            box-sizing: border-box; // 边款宽度等于元素宽度；
+                            cursor: pointer;
+
+                            &.active {
+                                background: #fff;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+// 轮播图以下的内容；
+.main {
+    .wrapper {
+        .main-content-wrapper {
+            .list_outer_group {
+                background: #fff;
+                margin-top: 20px;
+
+                // 分类框；
+                .list_tab {
+                    width: 100%;
+                    height: 66px;
+                    border: 1px solid $lineColor; // 设置外边框实线；
+                    border-left: none;
+                    border-right: none;
+
+                    li {
+                        margin-top: 20px;
+                        float: left;
+                        padding: 0 10px; // 设置上下距离为0，左右为10px；
+                        a {
+                            color: $assistFontColor;
+                        }
+
+                        &:first-of-type {
+                            border-left: 5px solid #5c87d9; // 设置第一个元素的左边框；
+                        }
+
+                        &.active {
+                            a {
+                                color: $mainFontColor;
+                            }
+                        }
+                    }
+                }
+
+                // 文章列表；
+                .list_inner_group {
+                    @include news_list;
+                }
+
+                // 加载更多；
+                .load-more-group {
+                    padding: 20px 0;
+                    text-align: center;
+
+                    .load-more {
+                        width: 400px;
+                        height: 40px;
+                        background: #d2dcea;
+                        color: #6d85ac;
+                        border: none; // 去除边框；
+                        outline: none; // 点击时边框的外部线；
+                        cursor: pointer;
+                    }
+                }
+            }
+        }
+    }
+}

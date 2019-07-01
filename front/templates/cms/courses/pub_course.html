@@ -1,0 +1,89 @@
+{% extends 'cms/base.html' %}
+
+{% block title %}
+    发布课程
+{% endblock %}
+
+{% block head %}
+    <script src="{% static 'ueditor/ueditor.config.js' %}"></script>
+    <script src="{% static 'ueditor/ueditor.all.min.js' %}"></script>
+    <script src="{% static 'js/cms/pub_course.min.js' %}"></script>
+{% endblock %}
+
+{% block content-header %}
+    {% if courses%}
+        <h1>编辑课程</h1>
+    {% else %}
+        <h1>发布课程</h1>
+    {% endif %}
+
+{% endblock %}
+
+{% block content %}
+    <div class="row">
+        <div class="col-md-12">
+            <div class="box box-primary">
+                <form action="" class="form">
+                    <div class="box-body">
+                        <div class="form-group">
+                            <label for="title-input">标题：</label>
+                            {% if courses %}
+                                <input type="text" class="form-control" id="title-input" name="title" value="
+{{ courses.title }}">
+                            {% else %}
+                                <input type="text" class="form-control" id="title-input" name="title">
+                            {% endif %}
+                        </div>
+                        <div class="form-group">
+                            <label for="category-input">分类：</label>
+                            <select name="category" id="category-input" class="form-control">
+                                {% for category in categories %}
+                                    {% if courses and courses.category_id == category.pk %}
+                                        <option value="{{ category.pk }}" selected>{{ category.name }}</option>
+                                    {% else %}
+                                        <option value="{{ category.pk }}">{{ category.name }}</option>
+                                    {% endif %}
+                                {% endfor %}
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <label for="teacher-input">讲师：</label>
+                            <select name="teacher" id="teacher-input" class="form-control">
+                                {% for teacher in teachers %}
+                                    {% if courses and teacher.id == teacher.pk %}
+                                        <option value="{{ teacher.pk }}">{{ teacher.username }}</option>
+                                    {% else %}
+                                        <option value="{{ teacher.pk }}">{{ teacher.username }}</option>
+                                    {% endif %}
+
+                                {% endfor %}
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <label for="video-input">视频地址：</label>
+                            <input type="text" class="form-control" name="video-url" id="video-input"
+                                   placeholder="视频地址">
+                        </div>
+                        <div class="form-group">
+                            <label for="cover-input">封面图：</label>
+                            <input type="text" class="form-control" name="cover" id="cover-input" placeholder="封面图">
+                        </div>
+                        <div class="form-group">
+                            <label for="price-input">价格：</label>
+                            <input type="text" class="form-control" name="price" id="price-input" placeholder="价格">
+                        </div>
+                        <div class="form-group">
+                            <label for="duration-input">时长：</label>
+                            <input type="text" class="form-control" name="duration" id="duration-input">
+                        </div>
+                        <div class="form-group">
+                            <label>简介：</label>
+                            <script id="editor" type="text/plain"></script>
+                        </div>
+                        <div class="btn btn-primary pull-right" id="submit-btn">发布课程</div>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+{% endblock %}

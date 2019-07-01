@@ -1,0 +1,67 @@
+{% extends 'base/front_base.html' %}
+
+{% block title %}
+    确认订单
+{% endblock %}
+
+{% block head %}
+    <link rel="stylesheet" href="{% static 'css/common/header.min.css' %}">
+    <link rel="stylesheet" href="{% static 'css/common/footer.min.css' %}">
+    <link rel="stylesheet" href="{% static 'css/common/body.min.css' %}">
+    <link rel="stylesheet" href="{% static 'css/course/course_order.min.css' %}">
+    <script src="{% static 'js/cms/course_order.min.js' %}"></script>
+{% endblock %}
+
+{% block main %}
+    <div class="main">
+        <div class="wrapper">
+            <table class="table">
+                <thead>
+                <tr>
+                    <th>商品名称</th>
+                    <th>单价(元)</th>
+                    <th>小计（元）</th>
+                </tr>
+                </thead>
+                <tbody>
+                <tr>
+                    <td align="left">
+                        <a href="#">
+                            <img class="thumbnail" src="{{ goods.thumbnail }}" alt="">
+                            <span class="title">{{ goods.title }}</span>
+                        </a>
+                    </td>
+                    <td>{{ goods.price }}</td>
+                    <td>{{ goods.price }}</td>
+                </tr>
+                </tbody>
+            </table>
+            <form action="https://pay.bbbapi.com/" method="post" id="pay-form">
+                <input type="hidden" name="uid" value="49dc532695baa99e16e01bc0">
+                <input type="hidden" name="price" value="{{ goods.price }}">
+                <input type="hidden" name="notify_url" value="{{ notify_url }}">
+                <input type="hidden" name="return_url" value="{{ return_url }}">
+                <input type="hidden" name="orderid" value="{{ order.pk }}">
+                <input type="hidden" name="orderuid" value="{{ request.user.pk }}">
+                <input type="hidden" name="goodsname" value="{{ goods.title }}">
+                <input type="hidden" name="key" value="">
+                <div class="pay-way">
+                    <label for="istype-wx" class="label">
+                        <input id="istype-wx" type="radio" name="istype" value="2">
+                        <span class="wx-btn fk-btn">
+                        <img src="http://nos.netease.com/test-edu-image/1BD9F69D6760CE1508D2269864AA54F8.png" alt="">
+                    </span>
+                    </label>
+                    <label for="istype-zfb" class="label">
+                        <input id="istype-zfb" type="radio" name="istype" value="1" checked>
+                        <span class="zfb-btn fk-btn"></span>
+                    </label>
+                    <div style="clear: both;"></div>
+                </div>
+                <div class="submit-group">
+                    <input type="submit" value="去支付" id="submit-btn" class="submit-btn">
+                </div>
+            </form>
+        </div>
+    </div>
+{% endblock %}

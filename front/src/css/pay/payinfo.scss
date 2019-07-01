@@ -1,0 +1,75 @@
+@import "../common/header";
+@import "../common/body";
+@import "../common/footer";
+@import "../common/init";
+@import "../common/constants";
+
+.main{
+    .wrapper{
+        .main-content-wrapper{
+            .advertise-group{
+                width: 100%;
+                height: 200px;
+                img{
+                    width: 100%;
+                    height: 100%;
+                }
+            }
+
+            // 装载下方所有图标的盒子；
+            .document-list{
+                display: flex;
+                flex-wrap: wrap;
+                justify-content: space-between;
+                padding: 20px;
+                background: #fff;
+
+                // 每个链接图标；
+                li{
+                    width: 370px;
+                    height: 150px;
+                    border: 1px solid #ccc;
+                    overflow: hidden;
+                    margin-bottom: 20px;
+                    .category-group{
+                        float: left;
+                        width: 100px;
+                        height: 100%;
+                        img{
+                            width: 100px;
+                            height: 100%;
+                        }
+                    }
+                    .document-info{
+                        float: left;
+                        width: 270px;
+                        height: 150px;
+                        padding: 10px;
+                        box-sizing: border-box;
+                        position: relative;
+                        .document-title{
+                            font-size: 18px;
+                            color: $mainFontColor;
+                        }
+                        .document-desc{
+                            font-size: 13px;
+                            margin-top: 20px;
+                            color: $assistFontColor;
+                        }
+                        .document-price{
+                            position: absolute;
+                            left: 0;
+                            right: 20px;
+                            bottom: 20px;
+                            text-align: right;
+                            color: #f76367;
+                        }
+                    }
+                    &:hover{
+                        box-shadow: 0 3px 14px rgba(0,0,0,0.1);
+                    }
+                }
+            }
+        }
+    }
+}

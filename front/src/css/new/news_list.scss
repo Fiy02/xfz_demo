@@ -1,0 +1,70 @@
+// 主页与搜索页的文章列表（不包括‘分类’及‘更多’的样式）；
+@import "../common/constants";
+
+@mixin news_list() {
+    li {
+        padding: 20px; // 设置内边距
+        border-bottom: 1px solid $lineColor; // 设置下边框，
+        overflow: hidden;
+
+        .thumbnail-group {
+            float: left;
+            height: 160px;
+            width: 225px;
+
+            img {
+                height: 100%;
+                width: 100%;
+            }
+        }
+
+        .news-group {
+            width: 504px;
+            float: right;
+            height: 160px;
+            position: relative;
+
+            .title {
+                font-size: 20px;
+
+                a {
+                    color: $mainFontColor;
+
+                    &:hover {
+                        color: $themeColor;
+                    }
+                }
+            }
+
+            .desc {
+                font-size: 14px;
+                margin-top: 20px;
+                color: #878797;
+            }
+
+            .more {
+                position: absolute;
+                left: 0;
+                right: 0;
+                bottom: 0;
+                font-size: 14px;
+                color: $assistFontColor;
+
+                .category {
+                    color: $themeColor;
+                    cursor: pointer;
+                }
+
+                .author {
+                    float: right;
+                    cursor: pointer;
+                }
+
+                .pub-time {
+                    float: right;
+                    margin-left: 20px;
+                }
+            }
+        }
+    }
+}

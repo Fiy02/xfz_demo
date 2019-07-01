@@ -1,0 +1,38 @@
+@import "../common/constants";
+
+.main{
+    margin-top: $navHeight;
+    .nav-course{
+        $courseNavHeight: 54px;
+        width: 100%;
+        height: $courseNavHeight;
+        box-shadow: 0 4px 5px rgba(0,0,0,0.5);  // 向框添加阴影，水平、垂直、模糊距离、颜色及透明度；
+        .nav-container{
+            width: $pageWidth;
+            height: $courseNavHeight;
+            margin: 0 auto;
+            line-height: $navHeight;
+            h3.title{
+                color: #696969;
+                float: left;
+                font-size: 24px;
+            }
+            .nav-list{
+                float: left;
+                margin-left: 100px;
+                li{
+                    float: left;
+                    margin-right: 40px;
+                    a{
+                        color: #888;
+                    }
+                    &.active{
+                        a{
+                            color: $mainFontColor;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

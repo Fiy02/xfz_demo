@@ -1,0 +1,143 @@
+@import "../common/init";
+@import "../common/header";
+@import "../common/body";
+@import "../common/footer";
+@import "../common/constants";
+
+.main{
+    .wrapper{
+        .main-content-wrapper{
+            background: #fff;
+            padding: 20px;
+            box-sizing: border-box;
+            .new-wrapper{
+                overflow: hidden;
+                .title{
+                    color: $mainFontColor;
+                    font-size: 26px;
+                    font-weight: 400;
+                }
+                .news-info{
+                    $newsInfoHeight: 28px;
+                    height: 28px;
+                    line-height: $newsInfoHeight;
+                    overflow: hidden;
+                    margin-top: 20px;
+                    color: $assistFontColor;
+                    font-size: 14px;
+                    .info-group{
+                        float: left;
+                        .hub-time{
+                            margin-left: 20px;
+                        }
+                        .category{
+                            margin-left: 20px;
+                            background: $themeColor;
+                            padding: 0 5px;
+                            color: #fff;
+                        }
+                    }
+                    .share-group{
+                        float: right;
+                        overflow: hidden;
+                        span{
+                            float: left;
+                        }
+                        .share-item{
+                            float: left;
+                            width: 28px;
+                            height: 28px;
+                            background: url("https://www.xfz.cn/static/build/images/share.png");
+                            background-size: 240%;
+                            background-repeat: no-repeat;
+                        }
+                        .weixin{
+                        }
+                        .weibo{
+                            margin-left: 10px;
+                            background-position: -39px;
+                        }
+                    }
+                }
+                .article{
+                    margin-top: 20px;
+                    line-height: 35px;
+                    img{
+                        max-width: 100%;
+                    }
+                }
+            }
+            .comment-wrapper{
+                border-top: 1px solid $lineColor;
+                padding-top: 20px;
+                .title{
+                    color: $mainFontColor;
+                    font-size: 18px;
+                    font-weight: 400;
+                }
+                .comment-textarea{
+                    margin-top: 10px;
+                    width: 100%;
+                    resize: none;       // 不可调整大小；
+                    outline: none;
+                    border: 1px solid #ccc;
+                    border-radius: 5px;     // 可调整边框的四个角；
+                    font-size: 14px;
+                    padding: 6px 10px;
+                    box-sizing: border-box;
+                }
+                .nologin-textarea{
+                    height: 40px;
+                    line-height: 26px;
+                    overflow: hidden;
+                }
+                .logined-textarea{
+                    height: 80px;
+                }
+                .submit-btn-group{
+                    text-align: right;
+                    margin-top: 14px;
+                    .submit-btn{
+                        background: $themeColor;
+                        padding: 6px 20px;
+                        color: #fff;
+                        border-radius: 5px;
+                        cursor: pointer;
+                    }
+                }
+                .comment-list{
+                    margin-top: 20px;
+                    li{
+                        border-bottom: 1px solid $lineColor;
+                        padding-bottom: 20px;
+                        margin-bottom: 20px;
+                        .comment-info{
+                            overflow: hidden;
+                            width: 100%;
+                            height: 40px;
+                            line-height:40px;
+                            color: $assistFontColor;
+                            font-size: 16px;
+                            .avatar{
+                                float: left;
+                                height: 40px;
+                                width: 40px;
+                            }
+                            .author{
+                                float: left;
+                                margin-left: 20px;
+                            }
+                            .pub-time{
+                                float: right;
+                            }
+                        }
+                        .comment-content{
+                            margin-left: 60px;
+                            margin-top: 10px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

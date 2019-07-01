@@ -1,0 +1,48 @@
+{% extends 'cms/base.html' %}
+
+{% block title %}
+    添加员工
+{% endblock %}
+
+{% block head %}
+{% endblock %}
+
+{% block content-header %}
+    <h1>添加员工</h1>
+{% endblock %}
+
+{% block content %}
+    <div class="row">
+        <div class="col-md-6">
+            <div class="box">
+                <form action="" method="post">
+                    <div class="box-body">
+                        {% csrf_token %}
+                        <div class="box-group">
+                            <label for="telephone-input">手机号码：</label>
+                            <input type="text" class="form-control" name="telephone">
+                        </div>
+                        <div class="checked">
+                            {% for group in groups %}
+                                <label style="margin-right: 20px">
+                                    <input type="checkbox" name="groups" value="{{ group.pk }}">{{ group.name }}
+                                </label>
+                            {% endfor %}
+                        </div>
+                        <!-- 出错时打印错误信息 -->
+                        <div class="form-group">
+                            {% for message in messages %}
+                                {{ message }}
+                            {% endfor %}
+
+                        </div>
+                    </div>
+                    <div class="box-footer">
+                        <a href="{% url 'cms:staff' %}" class="btn btn-info pull-left">返回管理</a>
+                        <button class="btn btn-primary pull-right">立即添加</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+{% endblock %}

@@ -1,0 +1,171 @@
+@import "constants";
+
+body{
+    background: #f2f2f2;
+}
+
+// 中部整体内容区域；
+.main {
+    margin-top: $navHeight+22px;
+    width: 100%;
+    .wrapper {
+        width: $pageWidth;
+        margin: 0 auto;
+        overflow: hidden;
+
+        .main-content-wrapper{
+            float: left;
+            width: $mainBoxWidth;
+        }
+    }
+}
+
+// 右边侧栏区；
+.main{
+    .wrapper{
+        .sidebar-wrapper {
+            float: right;
+            width: $sidebarWidth;
+            background: #fff;
+
+            .title-group {
+                padding: 20px;
+                overflow: hidden;
+
+                .title {
+                    float: left;
+                    color: $mainFontColor;
+                    font-size: 18px;
+                }
+
+                .more {
+                    float: right;
+                    color: $themeColor;
+                    font-size: 14px;
+                }
+            }
+
+            .advertise-group {
+                img {
+                    width: 100%;
+                }
+            }
+
+            .focus-group {
+                padding: 0 20px;
+                overflow: hidden;
+
+                .left-group {
+                    float: left;
+                    width: 190px;
+
+                    li {
+                        width: 100%;
+                        height: 50px;
+                        line-height: 50px;
+                        margin-bottom: 20px;
+                        background: url("https://www.xfz.cn/static/build/images/side-icon.png");
+                        background-size: 23%;
+                        background-repeat: no-repeat;
+                        overflow: hidden;
+
+                        a {
+                            float: left;
+                            margin-left: 40%;
+                            color: $assistFontColor;
+                            font-size: 16px;
+                        }
+                    }
+
+                    .zhihu {
+                        background-position: 0 0;
+                    }
+
+                    .weibo {
+                        background-position: 0 -53px;
+                    }
+
+                    .toutiao {
+                        background-position: 0 -102px;
+                    }
+                }
+
+                .right-group {
+                    float: right;
+                    background: url("https://www.xfz.cn/static/build/images/xfz-wechat-share.png");
+                    width: 100px;
+                    background-size: 100%;
+                    background-repeat: no-repeat;
+
+                    .desc {
+                        margin-top: 100px;
+                        color: $assistFontColor;
+                        font-size: 10px;
+                    }
+                }
+            }
+
+            .hot-new-group{
+                .hot-list-group {
+
+                    li {
+                        padding: 0 20px 20px;
+                        overflow: hidden;
+                        border-bottom: 1px solid $lineColor;
+
+                        .left-group {
+                            width: 200px;
+                            height: 72px;
+                            float: left;
+                            position: relative;
+
+                            .title {
+                                font-size: 14px;
+
+                                a {
+                                    color: $mainFontColor;
+
+                                    &:hover {
+                                        color: $themeColor;
+                                    }
+                                }
+                            }
+
+                            .more {
+                                position: absolute;
+                                left: 0;
+                                right: 0;
+                                bottom: 0;
+                                font-size: 12px;
+
+                                .category {
+                                    float: left;
+                                    color: $themeColor;
+
+                                }
+
+                                .pub-time {
+                                    float: right;
+                                    color: $assistFontColor;
+                                }
+                            }
+                        }
+
+                        .right-group {
+                            float: right;
+                            width: 100px;
+                            height: 72px;
+
+                            img {
+                                width: 100%;
+                                height: 100%;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+
