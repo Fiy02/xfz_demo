@@ -79,7 +79,10 @@ TEMPLATES = [
             # 配置模板的static标签；
             'builtins': [
                 'django.templatetags.static'
-            ]
+            ],
+            'libraries': {
+                    'news_filters': 'app.news.templatetags.news_filters',
+               },
         },
     },
 ]
