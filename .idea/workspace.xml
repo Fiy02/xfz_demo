@@ -40,8 +40,17 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/xfz/settings.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="450">
-              <caret line="51" lean-forward="true" selection-start-line="51" selection-end-line="51" />
+            <state relative-caret-position="356">
+              <caret line="81" column="14" selection-start-line="81" selection-start-column="14" selection-end-line="81" selection-end-column="14" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/front/templates/news/index.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="270">
+              <caret line="9" column="43" selection-start-line="9" selection-start-column="43" selection-end-line="9" selection-end-column="43" />
             </state>
           </provider>
         </entry>
@@ -49,8 +58,11 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/apps/news/templatetags/news_filters.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="140">
+            <state relative-caret-position="270">
               <caret line="9" column="22" selection-start-line="9" selection-start-column="22" selection-end-line="9" selection-end-column="22" />
+              <folding>
+                <element signature="e#17#44#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -218,6 +230,12 @@
               <item name="xfz" type="b2602c69:ProjectViewProjectNode" />
               <item name="xfz" type="462c0819:PsiDirectoryNode" />
               <item name="front" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="xfz" type="b2602c69:ProjectViewProjectNode" />
+              <item name="xfz" type="462c0819:PsiDirectoryNode" />
+              <item name="front" type="462c0819:PsiDirectoryNode" />
+              <item name="templates" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -405,12 +423,12 @@
       <workItem from="1562119209168" duration="2595000" />
       <workItem from="1562227434045" duration="336000" />
       <workItem from="1562227816509" duration="5541000" />
-      <workItem from="1562296675885" duration="5203000" />
+      <workItem from="1562296675885" duration="6323000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="853934000" />
+    <option name="totallyTimeSpent" value="855054000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -844,22 +862,25 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/front/templates/news/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1258">
-          <caret line="83" column="82" selection-start-line="83" selection-start-column="82" selection-end-line="83" selection-end-column="82" />
+        <state relative-caret-position="270">
+          <caret line="9" column="43" selection-start-line="9" selection-start-column="43" selection-end-line="9" selection-end-column="43" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/apps/news/templatetags/news_filters.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="140">
+        <state relative-caret-position="270">
           <caret line="9" column="22" selection-start-line="9" selection-start-column="22" selection-end-line="9" selection-end-column="22" />
+          <folding>
+            <element signature="e#17#44#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/xfz/settings.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="450">
-          <caret line="51" lean-forward="true" selection-start-line="51" selection-end-line="51" />
+        <state relative-caret-position="356">
+          <caret line="81" column="14" selection-start-line="81" selection-start-column="14" selection-end-line="81" selection-end-column="14" />
         </state>
       </provider>
     </entry>
