@@ -46,8 +46,6 @@ INSTALLED_APPS = [
     'apps.payinfo',
     'rest_framework',
     'debug_toolbar',
-    'apps.news.templatetags',
-    'apps.payinfo.templatetags',
 ]
 
 MIDDLEWARE = [
