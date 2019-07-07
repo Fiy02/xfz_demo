@@ -46,7 +46,6 @@ INSTALLED_APPS = [
     'apps.payinfo',
     'rest_framework',
     'debug_toolbar',
-    'apps.news.templatetags',
 ]
 
 MIDDLEWARE = [
@@ -82,8 +81,8 @@ TEMPLATES = [
                 'django.templatetags.static'
             ],
             'libraries':{
-                'news_filters': 'apps.news.templatetags.news_filters',
-                'payinfo_filters': 'apps.payinfo.templatetags.payinfo_filters'
+                'news_filters': 'apps.news.templatetags',
+                'payinfo_filters': 'apps.payinfo.templatetags'
             }
         },
     },
