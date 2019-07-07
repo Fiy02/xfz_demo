@@ -46,7 +46,6 @@ INSTALLED_APPS = [
     'apps.payinfo',
     'rest_framework',
     'debug_toolbar',
-    'apps.news.templatetags'
 ]
 
 MIDDLEWARE = [
@@ -81,6 +80,7 @@ TEMPLATES = [
             'builtins': [
                 'django.templatetags.static'
             ],
+
         },
     },
 ]
