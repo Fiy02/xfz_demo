@@ -81,8 +81,8 @@ TEMPLATES = [
                 'django.templatetags.static'
             ],
             'libraries':{
-                'news_filters': 'apps.news.templatetags',
-                'payinfo_filters': 'apps.payinfo.templatetags'
+                'news_filters': 'apps.news.templatetags.news_filters',
+                'payinfo_filters': 'apps.payinfo.templatetags.payinfo_filters'
             }
         },
     },
