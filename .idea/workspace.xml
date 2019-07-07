@@ -2,6 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="a2df11fd-67d0-4c8e-be4e-9c6ce2acdc01" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/apps/news/templatetags/news_filters.py" beforeDir="false" afterPath="$PROJECT_DIR$/apps/news/templatetags/news_filters.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/xfz/settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/xfz/settings.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -38,8 +40,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/xfz/settings.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="60">
-              <caret line="64" selection-start-line="64" selection-end-line="88" selection-end-column="1" />
+            <state relative-caret-position="382">
+              <caret line="49" column="30" selection-start-line="49" selection-start-column="30" selection-end-line="49" selection-end-column="30" />
             </state>
           </provider>
         </entry>
@@ -47,8 +49,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/requirements.txt">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="90">
-              <caret line="6" column="13" lean-forward="true" selection-start-line="6" selection-start-column="13" selection-end-line="6" selection-end-column="13" />
+            <state relative-caret-position="180">
+              <caret line="6" column="13" selection-start-line="6" selection-start-column="13" selection-end-line="6" selection-end-column="13" />
             </state>
           </provider>
         </entry>
@@ -65,8 +67,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/apps/news/templatetags/news_filters.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="270">
-              <caret line="9" column="22" selection-start-line="9" selection-start-column="22" selection-end-line="9" selection-end-column="22" />
+            <state relative-caret-position="300">
+              <caret line="10" column="4" lean-forward="true" selection-start-line="10" selection-start-column="4" selection-end-line="10" selection-end-column="4" />
               <folding>
                 <element signature="e#17#44#0" expanded="true" />
               </folding>
@@ -129,7 +131,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/front/templates/cms/courses/pub_course.html" />
         <option value="$PROJECT_DIR$/front/templates/cms/courses/teachers.html" />
         <option value="$PROJECT_DIR$/front/src/js/cms/teacher.js" />
         <option value="$PROJECT_DIR$/apps/cms/forms.py" />
@@ -179,14 +180,16 @@
         <option value="$PROJECT_DIR$/front/templates/cms/courses/course_list.html" />
         <option value="$PROJECT_DIR$/front/templates/cms/base.html" />
         <option value="$PROJECT_DIR$/requirements.txt" />
+        <option value="$PROJECT_DIR$/apps/news/templatetags/news_filters.py" />
         <option value="$PROJECT_DIR$/xfz/settings.py" />
       </list>
     </option>
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="683" />
-    <option name="width" value="683" />
-    <option name="height" value="728" />
+    <option name="x" value="489" />
+    <option name="y" value="166" />
+    <option name="width" value="1096" />
+    <option name="height" value="751" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectView">
@@ -194,7 +197,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -213,16 +215,24 @@
               <item name="apps" type="462c0819:PsiDirectoryNode" />
               <item name="news" type="462c0819:PsiDirectoryNode" />
             </path>
+            <path>
+              <item name="xfz" type="b2602c69:ProjectViewProjectNode" />
+              <item name="xfz" type="462c0819:PsiDirectoryNode" />
+              <item name="apps" type="462c0819:PsiDirectoryNode" />
+              <item name="news" type="462c0819:PsiDirectoryNode" />
+              <item name="templatetags" type="462c0819:PsiDirectoryNode" />
+            </path>
           </expand>
           <select />
         </subPane>
       </pane>
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="DefaultHtmlFileTemplate" value="HTML File" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="D:/git/Git/bin/git.exe" />
+    <property name="last_opened_file_path" value="$USER_HOME$/Desktop/python/课件和代码/部署笔记和代码/zhiliaoketang" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
     <property name="settings.editor.selected.configurable" value="project.propVCSSupport.Mappings" />
@@ -399,12 +409,14 @@
       <workItem from="1562119209168" duration="2595000" />
       <workItem from="1562227434045" duration="336000" />
       <workItem from="1562227816509" duration="5541000" />
-      <workItem from="1562296675885" duration="10442000" />
+      <workItem from="1562296675885" duration="11045000" />
+      <workItem from="1562381930640" duration="2995000" />
+      <workItem from="1562468232260" duration="5137000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="859173000" />
+    <option name="totallyTimeSpent" value="867908000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -419,7 +431,7 @@
     <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.8161765" visible="true" weight="0.1580938" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.8161765" visible="true" weight="0.16263238" />
       <window_info id="Structure" order="1" sideWeight="0.18382353" side_tool="true" weight="0.9773071" />
       <window_info id="Favorites" order="2" sideWeight="0.1740196" side_tool="true" weight="0.9773071" />
       <window_info anchor="bottom" id="manage.py@xfz" order="0" weight="0.44517186" />
@@ -471,20 +483,6 @@
     <option name="version" value="1" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://D:/Envs/django-env/Lib/site-packages/django/shortcuts.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="195">
-          <caret line="35" selection-start-line="35" selection-end-line="35" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/apps/ueditor/urls.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="90">
-          <caret line="3" selection-start-line="3" selection-end-line="3" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/apps/ueditor/views.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="180">
@@ -829,6 +827,13 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/requirements.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="180">
+          <caret line="6" column="13" selection-start-line="6" selection-start-column="13" selection-end-line="6" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/front/templates/news/index.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="270">
@@ -836,27 +841,32 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://D:/Envs/django-env/Lib/site-packages/django/template/__init__.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-1620" />
+      </provider>
+    </entry>
+    <entry file="file://D:/Envs/django-env/Lib/site-packages/django/template/library.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-2356">
+          <caret line="21" column="7" lean-forward="true" selection-start-line="21" selection-start-column="7" selection-end-line="21" selection-end-column="7" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/apps/news/templatetags/news_filters.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="270">
-          <caret line="9" column="22" selection-start-line="9" selection-start-column="22" selection-end-line="9" selection-end-column="22" />
+        <state relative-caret-position="300">
+          <caret line="10" column="4" lean-forward="true" selection-start-line="10" selection-start-column="4" selection-end-line="10" selection-end-column="4" />
           <folding>
             <element signature="e#17#44#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/requirements.txt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="90">
-          <caret line="6" column="13" lean-forward="true" selection-start-line="6" selection-start-column="13" selection-end-line="6" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/xfz/settings.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="60">
-          <caret line="64" selection-start-line="64" selection-end-line="88" selection-end-column="1" />
+        <state relative-caret-position="382">
+          <caret line="49" column="30" selection-start-line="49" selection-start-column="30" selection-end-line="49" selection-end-column="30" />
         </state>
       </provider>
     </entry>
