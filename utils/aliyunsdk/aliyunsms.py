@@ -18,8 +18,8 @@ Created on 2017-06-12
 
 """
 
-ACCESS_KEY_ID = "LTAIYWdLG8V74hLy"
-ACCESS_KEY_SECRET = "jdDFgzqY4jP0smr7qsntySkPZZvr04"
+ACCESS_KEY_ID = "LTAIYWdLG8######"
+ACCESS_KEY_SECRET = "jdDFgzqY#########"
 
 # 注意：不要更改
 REGION = "cn-hangzhou"
