@@ -11,7 +11,7 @@ certifi==2019.3.9
 cffi==1.12.3
 chardet==3.0.4
 constantly==15.1.0
-cryptography==2.7
+cryptography==3.2
 cssselect==1.1.0
 Django==2.1.7
 django-debug-toolbar==1.11
